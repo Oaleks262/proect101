@@ -1,0 +1,23 @@
+/* Базові стилі */
+@import "./base/_base.scss";
+@import "./base/_font.scss";
+
+/* Хедер */
+@import "./component/_header.scss";
+/* Основні секції */
+@import "./component/_hero.scss";
+@import "./component/_solution.scss";
+@import "./component/_acquaintance.scss";
+@import "./component/_methodology.scss";
+@import "./component/_price.scss";
+@import "./component/_help.scss";
+@import "./component/_list.scss";
+@import "./component/_reader.scss";
+@import "./component/_cases.scss";
+@import "./component/_diplomas.scss";
+@import "./component/_certificate.scss";
+@import "./component/_ready.scss";
+/* Футер */
+@import "./component/_footer.scss";
+/* Слайде */
+@import "./component/_swiper.scss";

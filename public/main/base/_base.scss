@@ -1,0 +1,17 @@
+:root{
+    --color-american-red: #b51733;
+    --color-beige: #f9f2e0;
+    --color-eerie-black: #1c1d1d;
+    --color-dirty-brown: #ac7421;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Quicksand;
+    color: var(--color-eerie-black);
+}
