@@ -7,14 +7,14 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Використання статичних файлів (HTML, CSS, JS)
-app.use(express.static(path.join(__dirname, "./public")));
+app.use(express.static(path.join(__dirname, "../public")));
 
 // Middleware для обробки JSON
 app.use(express.json());
 
 // Головна сторінка (якщо потрібно)
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "./public/index.html"));
+  res.sendFile(path.join(__dirname, "../public/index.html"));
 });
 
 // Обробка форми
