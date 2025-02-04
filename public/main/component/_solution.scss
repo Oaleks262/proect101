@@ -1,0 +1,27 @@
+.solution{
+    width: 100%;
+    background-color: var(--color-american-red);
+&__content{
+    display: flex;
+    flex-direction: column;
+    padding: 28px 0;
+    gap: 28px;
+}
+&__content > h3 {
+    text-align: left;
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--color-beige);
+}
+&__content > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+&__content > ul > li {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--color-beige);
+}
+}
