@@ -14,8 +14,9 @@ app.use(express.json());
 
 // Головна сторінка (якщо потрібно)
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public/index.html"));
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
+
 
 // Обробка форми
 app.post("/send-email", async (req, res) => {
