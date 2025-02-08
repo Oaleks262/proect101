@@ -12,7 +12,7 @@
 }
 
 body{
-    font-family: Quicksand;
+    font-family: Roboto, sans-serif;
     color: var(--color-eerie-black);
     background-color: var(--color-beige);
 }
@@ -32,4 +32,7 @@ li{
 }
 main{
     gap: 38px;
+}
+section{
+    padding: 42px 0;
 }

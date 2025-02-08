@@ -4,7 +4,7 @@ const nodemailer = require("nodemailer");
 const path = require("path");
 
 const app = express();
-const PORT = process.env.PORT || 10000;
+const PORT = process.env.PORT || 5000;
 
 // Використання статичних файлів (HTML, CSS, JS)
 app.use(express.static(path.join(__dirname, "public")));
@@ -38,11 +38,11 @@ app.post("/send-email", async (req, res) => {
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: process.env.OWNER_EMAIL,
-      subject: "Нова заявка з форми",
+      subject: "Нова заявка з форми на сертефікат",
       html: `
         <h2>Нове повідомлення з форми</h2>
         <p><strong>Ім'я:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${phone}</p>
+        <p><strong>Телефон:</strong> ${phone}</p>
         <p><strong>Повідомлення:</strong> ${message}</p>
       `,
     });

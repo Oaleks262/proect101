@@ -1,10 +1,11 @@
 .solution{
     width: 100%;
     background-color: var(--color-american-red);
+    
 &__content{
     display: flex;
     flex-direction: column;
-    padding: 28px 0;
+
     gap: 28px;
 }
 &__content > h3 {
@@ -23,5 +24,6 @@
     font-size: 20px;
     font-weight: 300;
     color: var(--color-beige);
+    margin-left: 24px;
 }
 }

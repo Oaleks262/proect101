@@ -1,0 +1,33 @@
+.acquaintance{
+    width: 100%;
+
+    &__content{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    &__text{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        justify-content: space-evenly;
+    }
+    &__text > h3{
+        font-size: 42px;
+        text-align: left;
+        font-weight: 700;
+    }
+    &__text > p{
+        text-align: left;
+        font-size: 20px;
+        font-weight: 300;
+        
+    }
+    &__img{
+        width: 360px;
+        border-radius: 25px 2px;
+        border: 0.5px solid var(--color-dirty-brown);
+        box-shadow: 4px 4px 4px 2px var(--color-dirty-brown);
+    }
+}

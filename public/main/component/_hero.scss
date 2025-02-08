@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     height:100vh;
+    max-height: 1000px;
    
    
     &__content{
@@ -22,14 +23,14 @@
     }
     &__text > h1{
         text-align: left;
-        font-size: 38px;
+        font-size: 64px;
         font-weight: 700;
         color: var(--color-american-red);
 
     }
     &__p{
         text-align: left;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 300;
         color: var(--color-american-red);
 
@@ -43,20 +44,20 @@
         border: 1px solid var(--color-american-red);
         border-radius: 10px;
         text-align: center;
-        box-shadow: 1px 1px 1px 1px #707070;
+        box-shadow: 1px 1px 1px 1px var(--color-dirty-brown);
         transition: box-shadow .3s;
     }   
     &__button:hover{
-        box-shadow: 2px 2px 1px 1px #707070
+        box-shadow: 2px 2px 1px 1px var(--color-dirty-brown)
     }
     &__button:focus{
-        box-shadow: -2px -2px 1px 1px #707070
+        box-shadow: -2px -2px 1px 1px var(--color-dirty-brown)
     }
     &__img{
-        width: 360px;
-        border: 0.5px solid #707070;
-        border-radius: 50px 5px;
-        box-shadow: 4px 4px 4px 2px #707070;
+        width: 420px;
+        border: 0.5px solid var(--color-dirty-brown);
+        border-radius: 25px 2px;
+        box-shadow: 4px 4px 4px 2px var(--color-dirty-brown);
     }   
 
 
