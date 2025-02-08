@@ -39,25 +39,11 @@
         width: 256px;
         height: 40px;
         padding: 8px 16px;
-        color: var(--color-beige);
-        background-color: var(--color-american-red);
-        border: 1px solid var(--color-american-red);
-        border-radius: 10px;
-        text-align: center;
-        box-shadow: 1px 1px 1px 1px var(--color-dirty-brown);
-        transition: box-shadow .3s;
-    }   
-    &__button:hover{
-        box-shadow: 2px 2px 1px 1px var(--color-dirty-brown)
     }
-    &__button:focus{
-        box-shadow: -2px -2px 1px 1px var(--color-dirty-brown)
-    }
+    
     &__img{
         width: 420px;
-        border: 0.5px solid var(--color-dirty-brown);
         border-radius: 25px 2px;
-        box-shadow: 4px 4px 4px 2px var(--color-dirty-brown);
     }   
 
 

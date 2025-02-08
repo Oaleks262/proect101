@@ -1,5 +1,6 @@
 :root{
     --color-american-red: #b51733;
+    --color-red-hover: #b84d60;
     --color-beige: #f9f2e0;
     --color-eerie-black: #1c1d1d;
     --color-dirty-brown: #ac7421;
@@ -19,7 +20,7 @@ body{
 .conteiner{
     display: flex;
     flex-direction: column;
-margin: 0 auto  ;
+    margin: 0 auto  ;
     padding: 0 100px;
     max-width: 1240px;
     width: 100%;
@@ -36,3 +37,15 @@ main{
 section{
     padding: 42px 0;
 }
+
+.button{
+    color: var(--color-beige);
+    background-color: var(--color-american-red);
+    border: 1px solid var(--color-american-red);
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color .3s;
+    &:hover{
+        background-color: var( --color-red-hover);
+    }
+}   

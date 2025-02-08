@@ -33,7 +33,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../main/main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <title>
 		Наталія Бакай - Психолог - Психотерапевт
 	</title>
@@ -63,7 +63,7 @@
                         <h1>Наталія Бакай</h1>
                         <p class="hero__p">Допомагаю людям знаходити внутрішню опору, долати життєві труднощі та відновлювати гармонію з собою. У своїй роботі використовую перевірені методики, такі як когнітивно-поведінкова терапія <b>(КПТ)</b>, <b>EMDR</b>, <b>BSFT</b> та травмотерапія.
                         </p>
-                        <a class="hero__button" href="">Зареєструватись</a>
+                        <a class="hero__button button" href="">Зареєструватись</a>
                     </div>
                     <img class="hero__img" src="./img/pictures/hero/hero-img.jpg" alt="Hero pictures"/>
                 </div>
@@ -140,6 +140,129 @@
                             </li>
 
                         </ul>
+                    </div>
+
+                    <h3 style="margin-top: 48px;">Мої методики:</h3>
+                    <ul class="methodology__ul2">
+                        <li class="methodology__li2">
+                            <p>Травмотерапія</p>
+                            <a href="#" class="button-terapy button">
+                                <svg>
+                                    <use href="./img/icon/main/icon.svg#icon-circle-down" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="methodology__li2">
+                            <p title="Десенсибілізація та опрацювання рухів очей">EMDR</p>
+                            <a href="#" class="button-emdr button">
+                                <svg>
+                                    <use href="./img/icon/main/icon.svg#icon-circle-down" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="methodology__li2">
+                            <p title="Терапія короткотривалих рішень">BSFT</p>
+                            <a href="#" class="button-bsft button">
+                                <svg>
+                                    <use href="./img/icon/main/icon.svg#icon-circle-down" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="methodology__li2">
+                            <p title="Когнітивно-повідінкова терапія">КПТ</p>
+                            <a href="#" class="button-kpt button">
+                                <svg>
+                                    <use href="./img/icon/main/icon.svg#icon-circle-down" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Модальні вікна -->
+                    <div class="modal__terapy modal">
+                        <div class="modal__item">
+                            <svg class="modal__img">
+                                <use href="./img/icon/main/icon.svg#icon-cross"/>
+                            </svg>
+                            <div class="modal__text">
+                                <h4>Травмотерапія</h4>
+                            <p>Це робота з травмами – нервовими ранами, які досягають болю. Ми створюємо <strong>безпечний простір</strong> , щоб ти міг/могла прожити та відпустити біль.</p>
+                            <ul>
+    
+                                <li>
+                                   <p><strong>Що це дає:</strong> полегшення, звільнення від минулого, відчуття цілості.</p>
+                                </li>
+                                <li>
+                                    <p><strong>Як працює:</strong>
+                                        ми вільно і дбайливо торкаємось складних тем, щоб ти відчував/ла себе сильнішим/ою.</p>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__emdr modal">
+                       <div class="modal__item">
+                        <svg class="modal__img">
+                            <use href="./img/icon/main/icon.svg#icon-cross"/>
+                        </svg>
+                        <div class="modal__text">
+                            <h4>EMDR <br> <span>(Десенсибілізація та опрацювання рухів очей)</span></h4>
+                            <p>Це провідний науково доведений метод для роботи з травмами та важкими спогадами. Ми використовуємо рухи очей (або постукування, чи звуки), щоб допомогти мозку <strong>переробити травматичні події</strong> .</p>
+                            <ul>
+                                <li><p><strong>Що це дає:</strong>ти перестаєш "застрягати" у больових спогадах, вони більше не викликають сильних емоцій. </p>
+                                </li>
+                                <li>
+                                    <p>В цьому інструменті перевага швидкості, 1 травматичну подію можна опрацювати за 3-5 сесій</p>
+                                </li>
+                                <li>
+                                    <p>EMDR рекомендований протоколами та доведений дослідженнями. Нещодавно весь світ побачив, як принц Гаррі проходить сеанс психотерапії за допомогою методу EMDR онлайн.</p>
+                                </li>
+                                <li><p><strong>Як працює:</strong>твій мозок "допрацьовує" травматичний досвід так, щоб він більше не заважав жити шляхом стимуляції півкуль головного мозку перебуваючи у свідомості.
+                                </p></li>
+                            </ul>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="modal__bsft modal">
+                        <div class="modal__item">
+                            <svg class="modal__img">
+                                <use href="./img/icon/main/icon.svg#icon-cross"/>
+                            </svg>
+                            <div class="modal__text">
+                                <h4>BSFT <br> <span>(Терапія короткотривалих рішень)</span></h4>
+                                <p>Цей підхід готовий зосередитися на тому, <strong>що працює в твоєму житті</strong> , а не на проблемах. Ми разом розуміємо твої цілі і маленькими кроками рухаємося до них.
+                                </p>
+                                <ul>
+                                    <li>
+                                        <p><strong>Що це дає:</strong> швидкий результат, особливо якщо ти хочеш серцеву конкретну проблему.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><strong>Як працює</strong>замість копання в минулому, ми шукаємо твої сили і ресурси.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="modal__kpt modal">
+                        <div class="modal__item">
+                        <svg class="modal__img">
+                            <use href="./img/icon/main/icon.svg#icon-cross"/>
+                        </svg>
+                       <div class="modal__text">
+                        <h4>КПТ <br> <span>(Когнітивно-повідінкова терапія)</span></h4>
+                        <p>Цей метод розуміє, як ваші думки впливають на почуття та дії. Ми працюємо над тим, щоб <strong>змінити негативні переконання</strong> на більш корисні.
+                        </p>
+                        <ul>
+                            <li>
+                                <p><strong>Що це дає:</strong>ти навчишся справлятися з тривогою, апатією, емоційною нестабільністю чи іншими емоційними труднощами.</p>
+                            </li>
+                            <li>
+                                <p><strong>Як працює:</strong>ти вчишся розпізнавати свої "пастки мислення" і  реагувати по-новому.</p>
+                            </li>
+                        </ul>
+                       </div>
+                       <img class="modal__logo" src="./img/icon/logo/NBLogoColorVertical.svg"/>
                     </div>
                 </div>
             </div>
