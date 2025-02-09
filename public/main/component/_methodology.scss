@@ -4,15 +4,21 @@
     &__content{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         gap: 32px;
     }
     &__content > h3{
         font-size: 42px;
+        text-align: center;
+        font-weight: 700;
+    }
+    &__content > h5{
+        font-size: 24px;
         text-align: left;
         font-weight: 700;
     }
+    
     &__item {
         width: 100%;
         margin-top: 24px;
@@ -45,6 +51,35 @@
     &__img {
         fill: var(--color-dirty-brown);
         width: 120px;
+    }
+    
+    &__item2{
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Дві рівні колонки */
+        gap: 10px 50px; /* Відстань між рядками та колонками */
+        padding: 0;
+        width: fit-content; /* Щоб ширина відповідала контенту */
+        margin: 0 auto;/* Центрує блок */
+    }
+    &__list2{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+    &__icon{
+        fill: var(--color-dirty-brown);
+        display: flex;
+        flex-basis: 30px;
+        flex-shrink: 0;
+        height: 30px;
+    }
+    &__copy{
+        font-style: italic;
+        font-size: 18px;
+        margin-bottom: 32px;
+        color:var(--color-american-red);
     }
     &__ul2{
         display: flex;

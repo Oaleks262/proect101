@@ -1,0 +1,33 @@
+.swiper-container{
+    width: 100%;
+    overflow: hidden;
+}
+.swiper-slide {
+    flex-shrink: 0;
+    object-fit: contain;
+    position: relative;
+    transition-property: transform;
+    display: block;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+}
+@media screen and (min-width: 1024px) {
+    .swiper-container{
+        width: 100%;
+        overflow: hidden;
+    }
+    .swiper-slide {
+        flex-shrink: 0;
+        position: relative;
+        transition-property: transform;
+        display: block;
+    }
+    .pagination{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 0 0;
+    }
+}

@@ -37,7 +37,12 @@ main{
 section{
     padding: 42px 0;
 }
-
+.center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .button{
     color: var(--color-beige);
     background-color: var(--color-american-red);
