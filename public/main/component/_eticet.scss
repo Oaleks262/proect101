@@ -11,7 +11,7 @@
 
         & > h1{
             text-align: center;
-            font-size: 56px;
+            font-size: 32px;
             font-weight: 700;
         }
     }
@@ -22,7 +22,7 @@
         width: 100%;
         & > h3 {
             text-align: left;
-            font-size: 28px;
+            font-size: 24px;
             font-weight: 700;
         }
         & > ol {
@@ -32,6 +32,7 @@
             
             & > li{
                 list-style: circle;
+                margin-left: 20px;
             }
         }
     }
@@ -42,7 +43,7 @@
         width: 100%;
         & > h3 {
             text-align: left;
-            font-size: 28px;
+            font-size: 24px;
             font-weight: 700;
         }
         & > ol {
@@ -52,6 +53,69 @@
             
             & > li{
                 list-style: circle;
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:1024px) {
+    .eticet{
+        width: 100%;
+     
+        &__content{
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+    
+            & > h1{
+                text-align: center;
+                font-size: 56px;
+                font-weight: 700;
+            }
+        }
+        &__principles{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 100%;
+            & > h3 {
+                text-align: left;
+                font-size: 28px;
+                font-weight: 700;
+            }
+            & > ol {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                
+                & > li{
+                    list-style: circle;
+                }
+            }
+        }
+        &__law{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 100%;
+            & > h3 {
+                text-align: left;
+                font-size: 28px;
+                font-weight: 700;
+            }
+            & > ol {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                
+                & > li{
+                    list-style: circle;
+                }
             }
         }
     }

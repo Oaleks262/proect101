@@ -46,15 +46,36 @@
                 <a href="/"><img class="header__logo" src="../img/icon/logo/NBLogoColorHorizontal.svg" alt="Logo header"/></a>
                 <nav class="header__nav">
                     <ul>
-                        <li><a class="header__link" href="#">Рішення</a></li>
-                        <li><a class="header__link" href="#">Ціна</a></li>
-                        <li><a class="header__link" href="#">Допомога</a></li>
-                        <li><a class="header__link" href="#">Відгуки</a></li>
+                        <li><a class="header__link" href="#solution">Рішення</a></li>
+                        <li><a class="header__link" href="#methodology">Допомога</a></li>
+                        <li><a class="header__link" href="#price">Ціна</a></li>
+                        <li><a class="header__link" href="#cases">Відгуки</a></li>
                     </ul>
                 </nav>
+                <a class="mobileBtn">
+                    <svg>
+                        <use href="./img/icon/main/icon.svg#icon-menu"/>
+                    </svg>
+                </a>
             </div>
         </div>
     </header>
+    <div class="mobileMenu">
+            <div class="mobileMenu__content">
+                <a href="/"><img class="header__logo" src="../img/icon/logo/NBLogoColorHorizontal.svg" alt="Logo header"/></a>
+                <svg class="mobileMenu__close">
+                    <use href="./img/icon/main/icon.svg#icon-cross"/>
+                </svg>
+            </div>
+            <nav class="mobileMenu__nav">
+                <ul>
+                    <li><a class="mobileMenu__link" href="#solution">Рішення</a></li>
+                    <li><a class="mobileMenu__link" href="#methodology">Допомога</a></li>
+                    <li><a class="mobileMenu__link" href="#price">Ціна</a></li>
+                    <li><a class="mobileMenu__link" href="#cases">Відгуки</a></li>
+                </ul>
+            </nav>
+    </div>
     <main>
         <section class="hero">
             <div class="conteiner">
@@ -64,13 +85,13 @@
                         <h1>Наталія Бакай</h1>
                         <p class="hero__p">Допомагаю людям знаходити внутрішню опору, долати життєві труднощі та відновлювати гармонію з собою. У своїй роботі використовую перевірені методики, такі як когнітивно-поведінкова терапія <b>(КПТ)</b>, <b>EMDR</b>, <b>BSFT</b> та травмотерапія.
                         </p>
-                        <a class="hero__button button" href="">Зареєструватись</a>
+                        <a class="hero__button button" href="https://calendly.com/natalibakay/meet-with-me-1/">Зареєструватись</a>
                     </div>
                     <img class="hero__img" src="./img/pictures/hero/hero-img.jpg" alt="Hero pictures"/>
                 </div>
             </div>
         </section>
-        <section class="solution">
+        <section class="solution" id="solution">
             <div class="conteiner">
                 <div class="solution__content">
                     <h3>Що я пропоную:</h3>
@@ -101,7 +122,7 @@
                 </div>
             </div>
         </section>
-        <section class="acquaintance">
+        <section class="acquaintance" >
             <div class="conteiner">
                 <div class="acquaintance__content">
                     <img class="acquaintance__img" src="./img/pictures/acquaintance/acquaintance-img.jpg" alt="acquaintance-img" />
@@ -116,7 +137,7 @@
                 </div>
             </div>
         </section>
-        <section class="methodology">
+        <section class="methodology" id="methodology">
             <div class="conteiner">
                 <div class="methodology__content">
                     <h3>Мій підхід:</h3>
@@ -143,12 +164,8 @@
 
                         </ul>
                     </div>
-
-
                     <h3 style="margin-top: 48px;">Мої методики:</h3>
-
                     <h5>Куди ми прямуємо і що відчувають клієнти в процесі терапії і по завершенні:</h5>
-
                     <ul class="methodology__item2">
                         <li class="methodology__list2">
                             <svg class="methodology__icon"> 
@@ -272,7 +289,7 @@
                             </a>
                         </li>
                     </ul>
-                    <!-- Модальні вікна -->
+                    
                     <div class="modal__terapy modal">
                         <div class="modal__item">
                             <svg class="modal__img">
@@ -292,7 +309,8 @@
                                 </li>
                             </ul>
                             </div>
-                        </div>
+                            <img class="modal__logo" src="./img/icon/logo/NBLogoColorVertical.svg"/>
+                        </div>  
                     </div>
                     <div class="modal__emdr modal">
                        <div class="modal__item">
@@ -315,7 +333,9 @@
                                 </p></li>
                             </ul>
                         </div>
+                        <img class="modal__logo" src="./img/icon/logo/NBLogoColorVertical.svg"/>
                        </div>
+                     
                     </div>
                     <div class="modal__bsft modal">
                         <div class="modal__item">
@@ -336,7 +356,7 @@
                                     </li>
                                 </ul>
                             </div>
-                           
+                            <img class="modal__logo" src="./img/icon/logo/NBLogoColorVertical.svg"/>
                         </div>
                     </div>
                     <div class="modal__kpt modal">
@@ -393,7 +413,7 @@
             
             </div>
         </section>
-        <section class="price">
+        <section class="price" id="price">
             <div class="conteiner">
                 <div class="price__content">
                     <h3>Вартість моєї допомоги:</h3>
@@ -403,21 +423,21 @@
                                 <use href="./img/icon/main/icon.svg#icon-user"/>
                             </svg>
                             <p>Індивідуальна консультація онлайн <br><span><strong>(1 год - 2000 грн)</strong></span></p>
-                            <a class="button price__button" href="">Зареєструватись</a>
+                            <a class="button price__button" href="https://calendly.com/natalibakay/meet-with-me-1/">Зареєструватись</a>
                         </li>
                         <li class="price__li">
                             <svg class="price__img">
                                 <use href="./img/icon/main/icon.svg#icon-users"/>
                             </svg>
                             <p>Групова терапія від 3 до 7 людей <br><span><strong>(1,5 год - 700 грн/людина )</strong></span></p>
-                            <a class="button price__button" href="">Зареєструватись</a>
+                            <a class="button price__button" href="https://calendly.com/natalibakay/meet-with-me-1/">Зареєструватись</a>
                         </li>
                         <li class="price__li">
                             <svg class="price__img">
                                 <use href="./img/icon/main/icon.svg#icon-konferens"/>
                             </svg>
                             <p>Провести івент на психологічну тему <br><span><strong>(2 год - 4000 грн )</strong></span></p>
-                            <a class="button price__button" href="">Зареєструватись</a>
+                            <a class="button price__button" href="https://calendly.com/natalibakay/meet-with-me-1/">Зареєструватись</a>
                         </li>
                     </ul>
                 </div>
@@ -445,9 +465,7 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="list"></section>
-        <section class="reader"></section> -->
-        <section class="cases">
+        <section class="cases" id="cases">
             <div class="conteiner">
                 <div class="cases__content">
                     <h3>Як змінилось життя моїх клієнтів</h3>
@@ -492,7 +510,7 @@
                         <ul class="diplomas__list swiper-wrapper">
                             <li class="diplomas__item swiper-slide">
                                 <div class="diplomas__cont">
-                                    <!-- <img src="./img/" alt="procedur-1"> -->
+                                    <!-- <img src="./img/" alt="procedur-1">-->
                                      <div class="img">Dip1</div>
                                 </div>
                             </li>
@@ -544,7 +562,6 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="ready"></section> -->
     </main>
     <footer class="footer">
         <div class="conteiner">
@@ -590,5 +607,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/form.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

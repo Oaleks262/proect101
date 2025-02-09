@@ -12,7 +12,7 @@
 
         & > h2{
             width: 100%;
-            font-size: 42px;
+            font-size: 24px;
             text-align: center;
             font-weight: 700;
             color: var(--color-beige);
@@ -21,7 +21,7 @@
     &__conteiner{
         display: flex;
         width: 100%;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
         gap: 24px;
@@ -32,10 +32,14 @@
     &__icon{
         display: flex;
         padding: 28px;
+        & > img{
+            width: 100%;
+        }
     }
     &__form{
         display: flex;
         flex-direction: column;
+        width: 70%;
         justify-content: center;
         align-items: center;
         gap: 28px;
@@ -48,7 +52,8 @@
     &__contactform{
         display: flex;
         flex-direction: column;
-        width: 250px;
+        max-width: 450px;
+        width: 100%;
         gap: 18px;
         & > input {
             display: flex;
@@ -67,5 +72,79 @@
     }
     &__btn{
         padding: 8px 16px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .certificate{
+        width: 100%;
+        background-color: var(--color-american-red);
+    
+        &__content{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+    
+            & > h2{
+                width: 100%;
+                font-size: 42px;
+                text-align: center;
+                font-weight: 700;
+                color: var(--color-beige);
+            }
+        }
+        &__conteiner{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            gap: 24px;
+            padding: 28px;
+            background-color: var(--color-beige);
+            border-radius: 50px;
+        }
+        &__icon{
+            display: flex;
+            padding: 28px;
+        }
+        &__form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 28px;
+            & > h2{
+                font-size: 28px;
+                text-align: left;
+                font-weight: 700;
+            }
+        }
+        &__contactform{
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            gap: 18px;
+            & > input {
+                display: flex;
+                padding: 8px 16px;
+                border-radius: 50px;
+                background-color: #c9c3b556;
+            }
+            & > textarea{
+                display: flex;
+                padding: 8px 16px;
+                height: 100px;
+                border-radius: 20px;
+                background-color: #c9c3b556;
+            }
+    
+        }
+        &__btn{
+            padding: 8px 16px;
+        }
     }
 }
