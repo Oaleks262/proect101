@@ -45,7 +45,7 @@ main {
 }
 
 section {
-  padding: 42px 0;
+  padding: 24px 0;
 }
 
 .center {
@@ -75,6 +75,9 @@ section {
     padding: 0 100px;
     max-width: 1240px;
     width: 100%;
+  }
+  section {
+    padding: 42px 0;
   }
 }
 .roboto-weight-100 {
@@ -245,8 +248,7 @@ section {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  align-items: flex-start;
 }
 .hero__content {
   width: 100%;
@@ -654,7 +656,7 @@ section {
   justify-content: space-around;
   background-color: var(--color-beige);
   padding: 45px 12px 10px;
-  width: 60%;
+  width: 80%;
   max-height: 80vh;
   transform: translateY(-30px);
   transition: transform 0.3s ease;
