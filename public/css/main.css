@@ -1844,7 +1844,6 @@ section {
   width: 100%;
 }
 .eticet__content {
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
