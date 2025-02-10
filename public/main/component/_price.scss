@@ -46,14 +46,13 @@
         }
     }
     &__img{
-        width: 50%;
+        display: flex;
         fill: var(--color-dirty-brown);
-        & > use {
-            width: 150px;
-            height: 150px;
-        }
-
+        flex-basis: 100px;
+        flex-shrink: 0;
+        height: 100px;
     }
+
     &__button{
         padding: 8px 16px;
     }
@@ -108,8 +107,11 @@
             }
         }
         &__img{
-            width: 160px;
+            display: flex;
             fill: var(--color-dirty-brown);
+            flex-basis: 100px;
+            flex-shrink: 0;
+            height: 100px;
         }
         &__button{
             padding: 8px 16px;

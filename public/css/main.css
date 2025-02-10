@@ -151,9 +151,6 @@ section {
 
 /* Хедер */
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -258,7 +255,6 @@ section {
   align-items: center;
   gap: 24px;
   justify-content: space-between;
-  margin-top: 66px;
 }
 .hero__text {
   width: 100%;
@@ -291,6 +287,7 @@ section {
   -o-object-fit: contain;
      object-fit: contain;
   width: 70%;
+  max-width: 600px;
   border-radius: 25px 2px;
 }
 
@@ -309,7 +306,6 @@ section {
     flex-direction: row;
     gap: 24px;
     justify-content: space-between;
-    margin-top: 66px;
   }
   .hero__text {
     width: 50%;
@@ -1090,12 +1086,11 @@ section {
   font-size: 18px;
 }
 .price__img {
-  width: 50%;
+  display: flex;
   fill: var(--color-dirty-brown);
-}
-.price__img > use {
-  width: 150px;
-  height: 150px;
+  flex-basis: 100px;
+  flex-shrink: 0;
+  height: 100px;
 }
 .price__button {
   padding: 8px 16px;
@@ -1147,8 +1142,11 @@ section {
     font-size: 18px;
   }
   .price__img {
-    width: 160px;
+    display: flex;
     fill: var(--color-dirty-brown);
+    flex-basis: 100px;
+    flex-shrink: 0;
+    height: 100px;
   }
   .price__button {
     padding: 8px 16px;
