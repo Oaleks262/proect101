@@ -46,15 +46,36 @@
                 <a href="/"><img class="header__logo" src="../img/icon/logo/NBLogoColorHorizontal.svg" alt="Logo header"/></a>
                 <nav class="header__nav">
                     <ul>
-                        <li><a class="header__link" href="/#solution">Рішення</a></li>
-                        <li><a class="header__link" href="/#methodology">Допомога</a></li>
-                        <li><a class="header__link" href="/#price">Ціна</a></li>
-                        <li><a class="header__link" href="/#cases">Відгуки</a></li>
+                        <li><a class="header__link" href="#solution">Рішення</a></li>
+                        <li><a class="header__link" href="#methodology">Допомога</a></li>
+                        <li><a class="header__link" href="#price">Ціна</a></li>
+                        <li><a class="header__link" href="#cases">Відгуки</a></li>
                     </ul>
                 </nav>
+                <a class="mobileBtn">
+                    <svg>
+                        <use href="../img/icon/main/icon.svg#icon-menu"/>
+                    </svg>
+                </a>
             </div>
         </div>
     </header>
+    <div class="mobileMenu">
+            <div class="mobileMenu__content">
+                <a href="/"><img class="header__logo" src="../img/icon/logo/NBLogoColorHorizontal.svg" alt="Logo header"/></a>
+                <svg class="mobileMenu__close">
+                    <use href="../img/icon/main/icon.svg#icon-cross"/>
+                </svg>
+            </div>
+            <nav class="mobileMenu__nav">
+                <ul>
+                    <li><a class="mobileMenu__link" href="#solution">Рішення</a></li>
+                    <li><a class="mobileMenu__link" href="#methodology">Допомога</a></li>
+                    <li><a class="mobileMenu__link" href="#price">Ціна</a></li>
+                    <li><a class="mobileMenu__link" href="#cases">Відгуки</a></li>
+                </ul>
+            </nav>
+    </div>
     <main>
         <section class="eticet">
             <div class="conteiner">
@@ -123,5 +144,6 @@
             </div>
         </div>
     </footer>
+    <script src="../js/menu.js"></script>
 </body>
 </html>

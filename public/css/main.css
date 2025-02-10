@@ -555,8 +555,15 @@ section {
   font-weight: 300;
 }
 .methodology__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   fill: var(--color-dirty-brown);
   width: 50%;
+}
+.methodology__img > use {
+  width: 150px;
+  height: 150px;
 }
 .methodology__item2 {
   display: flex;
@@ -1088,14 +1095,18 @@ section {
   font-size: 18px;
 }
 .price__img {
-  width: 160px;
+  width: 50%;
   fill: var(--color-dirty-brown);
+}
+.price__img > use {
+  width: 150px;
+  height: 150px;
 }
 .price__button {
   padding: 8px 16px;
 }
 
-@media screen and (min-width) {
+@media screen and (min-width: 1024px) {
   .price {
     width: 100%;
   }

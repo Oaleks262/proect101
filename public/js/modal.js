@@ -4,8 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     modalButtons.forEach((button) => {
         button.addEventListener("click", (e) => {
-            e.preventDefault();
-            const modalClass = button.classList[0].replace("button-", "modal__"); // Отримуємо відповідний клас модалки
+            // Якщо це посилання з href, не блокуємо його
+            if (button.tagName === "A" && button.getAttribute("href") !== "#") {
+                return;
+            }
+
+            e.preventDefault(); // Блокуємо тільки для кнопок або посилань з href="#"
+            const modalClass = button.classList[0].replace("button-", "modal__");
             const modal = document.querySelector(`.${modalClass}`);
             if (modal) {
                 modal.classList.add("modal--active");
@@ -16,9 +21,11 @@ document.addEventListener("DOMContentLoaded", function () {
     modals.forEach((modal) => {
         const closeButton = modal.querySelector(".modal__img"); // Хрестик закриття
 
-        closeButton.addEventListener("click", () => {
-            modal.classList.remove("modal--active");
-        });
+        if (closeButton) {
+            closeButton.addEventListener("click", () => {
+                modal.classList.remove("modal--active");
+            });
+        }
 
         // Закриття при кліку поза модальним вікном
         modal.addEventListener("click", (e) => {

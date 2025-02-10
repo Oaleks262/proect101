@@ -49,8 +49,15 @@
     }
 
     &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         fill: var(--color-dirty-brown);
         width: 50%;
+        & > use {
+            width: 150px;
+            height: 150px;
+        }
     }
     
     &__item2{
