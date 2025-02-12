@@ -587,6 +587,7 @@ section {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 100;
 }
 .modal.modal--active {
   opacity: 1;
@@ -600,8 +601,8 @@ section {
   justify-content: space-around;
   background-color: var(--color-beige);
   padding: 45px 12px 10px;
-  width: 80%;
-  max-height: 80vh;
+  width: 95%;
+  max-height: 90vh;
   transform: translateY(-30px);
   transition: transform 0.3s ease;
 }
@@ -615,18 +616,18 @@ section {
   gap: 10px;
 }
 .modal__text > h4 {
-  font-size: 18px;
+  font-size: 24px;
   text-align: left;
   font-weight: 700;
 }
 .modal__text > h4 > span {
-  font-size: 10px;
+  font-size: 20px;
   text-align: left;
   font-weight: 600;
 }
 .modal__text > p {
   text-align: left;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: 300;
 }
 .modal__text > ul {
