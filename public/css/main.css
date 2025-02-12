@@ -1466,7 +1466,7 @@ section {
 .certificate__form {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 90%;
   justify-content: center;
   align-items: center;
   gap: 28px;
@@ -1592,9 +1592,6 @@ section {
 }
 .footer__logo {
   display: flex;
-  width: 300px;
-  justify-content: center;
-  align-items: center;
 }
 .footer__logo > a > img {
   width: 100px;
@@ -1621,8 +1618,8 @@ section {
   text-decoration: none;
 }
 .footer__social > a > svg {
-  width: 65px;
-  height: 65px;
+  width: 45px;
+  height: 45px;
   fill: var(--color-american-red);
   transition: fill, 2s;
 }
@@ -1670,9 +1667,6 @@ section {
   }
   .footer__logo {
     display: flex;
-    width: 300px;
-    justify-content: center;
-    align-items: center;
   }
   .footer__logo > a > img {
     width: 100px;
@@ -1699,8 +1693,8 @@ section {
     text-decoration: none;
   }
   .footer__social > a > svg {
-    width: 65px;
-    height: 65px;
+    width: 30px;
+    height: 30px;
     fill: var(--color-american-red);
     transition: fill, 2s;
   }
