@@ -1467,14 +1467,14 @@ section {
 .certificate__form {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   justify-content: center;
   align-items: center;
   gap: 28px;
 }
 .certificate__form > h2 {
-  font-size: 28px;
-  text-align: left;
+  font-size: 24px;
+  text-align: center;
   font-weight: 700;
 }
 .certificate__contactform {
