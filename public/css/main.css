@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: Kurale, sans-serif;
   color: var(--color-eerie-black);
   background-color: var(--color-beige);
 }
@@ -80,76 +80,10 @@ section {
     padding: 42px 0;
   }
 }
-.roboto-weight-100 {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-  font-variation-settings: "wdth" 75;
-}
-
-.roboto-weight-200 {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-  font-variation-settings: "wdth" 80;
-}
-
-.roboto-weight-300 {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-variation-settings: "wdth" 85;
-}
-
-.roboto-weight-400 {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
+.kurale-regular {
+  font-family: "Kurale", serif;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings: "wdth" 90;
-}
-
-.roboto-weight-500 {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-variation-settings: "wdth" 95;
-}
-
-.roboto-weight-600 {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
-
-.roboto-weight-700 {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
-
-.roboto-weight-800 {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
-
-.roboto-weight-900 {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
 }
 
 /* Хедер */
@@ -280,6 +214,11 @@ section {
   font-weight: 300;
   color: var(--color-american-red);
 }
+.hero__span {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 300;
+}
 .hero__button {
   width: 100%;
   height: 40px;
@@ -289,7 +228,6 @@ section {
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
-  max-width: 600px;
   border-radius: 25px 2px;
 }
 
@@ -328,6 +266,11 @@ section {
     font-size: 20px;
     font-weight: 300;
     color: var(--color-american-red);
+  }
+  .hero__p__span {
+    text-align: left;
+    font-size: 12px;
+    font-weight: 300;
   }
   .hero__button {
     width: 256px;
@@ -515,12 +458,13 @@ section {
   gap: 32px;
 }
 .methodology__content > h3 {
+  width: 100%;
   font-size: 24px;
-  text-align: center;
+  text-align: left;
   font-weight: 700;
 }
 .methodology__content > h5 {
-  font-size: 20px;
+  font-size: 22px;
   text-align: left;
   font-weight: 700;
 }
@@ -717,6 +661,20 @@ section {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .methodology {
     width: 100%;
+  }
+  .methodology__content {
+    display: flex;
+  }
+  .methodology__content > h3 {
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+  }
+  .methodology__content > h5 {
+    font-size: 22px;
+    text-align: left;
+    font-weight: 700;
   }
   .methodology__ul2 {
     display: flex;
@@ -1166,9 +1124,25 @@ section {
   gap: 32px;
 }
 .help__container > h2 {
+  width: 100%;
   font-size: 24px;
   text-align: center;
   font-weight: 700;
+}
+.help__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 24px;
+}
+.help__item > img {
+  width: 100%;
+  border-radius: 25px 2px;
+  max-height: 450px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .help__ul {
   display: flex;
@@ -1210,14 +1184,26 @@ section {
     gap: 32px;
   }
   .help__container > h2 {
+    width: 100%;
     font-size: 42px;
     text-align: center;
     font-weight: 700;
+  }
+  .help__item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .help__item > img {
+    width: 300px;
+    border-radius: 25px 2px;
   }
   .help__ul {
     display: flex;
     width: 100%;
     flex-direction: column;
+    justify-content: space-evenly;
     gap: 12px;
     padding: 8px 12px;
   }

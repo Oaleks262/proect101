@@ -7,17 +7,19 @@
         align-items: flex-start;
         justify-content: center;
         gap: 32px;
+        & > h3 {
+            width: 100%;
+            font-size: 24px;
+            text-align: left;
+            font-weight: 700;
+        }
+        & > h5{
+            font-size: 22px;
+            text-align: left;
+            font-weight: 700;
+        }
     }
-    &__content > h3{
-        font-size: 24px;
-        text-align: center;
-        font-weight: 700;
-    }
-    &__content > h5{
-        font-size: 20px;
-        text-align: left;
-        font-weight: 700;
-    }
+   
     
     &__item {
         width: 100%;
@@ -229,6 +231,20 @@
     .methodology{
         width: 100%;
 
+    &__content{
+        display: flex;
+        & > h3 {
+            width: 100%;
+            font-size: 24px;
+            text-align: center;
+            font-weight: 700;
+        }
+        & > h5{
+            font-size: 22px;
+            text-align: left;
+            font-weight: 700;
+        }
+    }
     &__ul2{
         display: flex;
         width: 100%;
