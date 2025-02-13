@@ -1542,6 +1542,7 @@ section {
     justify-content: center;
     align-items: center;
     gap: 28px;
+    width: auto;
   }
   .certificate__form > h2 {
     font-size: 28px;
