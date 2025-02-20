@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Вхід в адмінку</title>
+</head>
+<body>
+  <section class="login">
+    <div class="conteiner">
+        <div class="login__content">
+            <h2>Вхід в адмін-панель</h2>
+            <form id="login-form">
+                <input type="password" id="password" placeholder="Введіть пароль">
+                <button type="submit" class="button-red">Увійти</button>
+            </form>
+            <p id="error-message" style="color: red;"></p>    
+        </div>
+    </div>
+  </section>
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const password = document.getElementById("password").value;
+
+            fetch("/api/login", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ password }),
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    localStorage.setItem("token", data.token);
+                    window.location.href = "admin.html"; // Перехід в адмінку
+                } else {
+                    document.getElementById("error-message").textContent = "Невірний пароль!";
+                }
+            })
+            .catch(error => console.error("Помилка авторизації:", error));
+        });
+    </script>
+</body>
+</html>

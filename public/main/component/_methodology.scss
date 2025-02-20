@@ -183,7 +183,7 @@
     }
 
     &__text > h4 > span {
-        font-size: 20px;
+        font-size: 18px;
         text-align: left;
         font-weight: 600;
     }
@@ -311,8 +311,8 @@
         justify-content: space-around;
         background-color: var(--color-beige);
         padding: 24px;
-        width: 60%;
-        max-height: 80vh;
+        width: 90%;
+        max-height: 90vh;
         gap: 45px;
         transform: translateY(-30px);
         transition: transform 0.3s ease;
@@ -601,5 +601,5 @@
         }
     }
     
-    
+
 }

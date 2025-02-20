@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Адмін-панель</title>
+</head>
+<body>
+<section class="admin">
+    <div class="conteiner">
+        <div class="admin__content">
+            <h2>Редагування контенту</h2>
+
+            <form id="admin-form">
+                <label for="text">Ваш текст:</label>
+                <textarea id="text" placeholder="Введіть текст"></textarea><br>
+        
+                <label for="link">Виберіть посилання:</label>
+                <select id="link">
+                    <option value="https://calendly.com/natalibakay/meet-with-me-1/">Calendly</option>
+                    <option value="/pages/booking.html">Сторінка обмеження</option>
+                </select><br>
+        
+                <button type="submit" class="button-red">Зберегти</button>
+                <button type="button" class="button-red" onclick="logout()">Вийти</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <script>
+        if (!localStorage.getItem("token")) {
+            window.location.href = "login.html"; // Якщо немає токена, перенаправляємо на вхід
+        }
+
+        // Завантажуємо поточні дані
+        fetch("/api/content")
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById("text").value = data.text;
+                document.getElementById("link").value = data.link;
+            })
+            .catch(error => console.error("Помилка отримання контенту:", error));
+
+        // Оновлюємо контент після натискання "Зберегти"
+        document.getElementById("admin-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const updatedContent = {
+                text: document.getElementById("text").value,
+                link: document.getElementById("link").value,
+            };
+
+            fetch("/api/content", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization: `${localStorage.getItem("token")}`,
+                },
+                body: JSON.stringify(updatedContent),
+            })
+            .then(res => res.json())
+            .then(data => alert(data.message))
+            .catch(error => console.error("Помилка оновлення:", error));
+        });
+
+        function logout() {
+            localStorage.removeItem("token");
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+</html>

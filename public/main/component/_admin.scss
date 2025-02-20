@@ -1,0 +1,83 @@
+.admin{
+    width: 100%;
+    &__content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 32px;
+        & > h2{
+            width: 100%;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        & > form{
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            & > select{
+                display: flex;
+                padding: 8px 16px;
+                border-radius: 50px;
+                background-color: rgba(201, 195, 181, 0.337254902);    
+            }
+            & > textarea{
+                display: flex;
+                padding: 8px 16px;
+                height: 160px;
+                border-radius: 20px;
+                background-color: rgba(201, 195, 181, 0.337254902);
+                    
+            }
+            & > button{
+                padding: 8px 16px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1024px){
+    .admin{
+        width: 100%;
+        &__content{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 32px;
+            & > h2{
+                width: 100%;
+                text-align: center;
+                font-size: 24px;
+                font-weight: 700;
+            }
+            & > form{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                & > select{
+                    display: flex;
+                    padding: 8px 16px;
+                    border-radius: 50px;
+                    background-color: rgba(201, 195, 181, 0.337254902);    
+                }
+                & > textarea{
+                    display: flex;
+                    padding: 8px 16px;
+                    height: 160px;
+                    border-radius: 20px;
+                    background-color: rgba(201, 195, 181, 0.337254902);
+                        
+                }
+                & > button{
+                    padding: 8px 16px;
+                }
+            }
+        }
+    }
+}
