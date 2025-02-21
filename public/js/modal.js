@@ -4,12 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     modalButtons.forEach((button) => {
         button.addEventListener("click", (e) => {
-            // Якщо це посилання з href, не блокуємо його
-            if (button.tagName === "A" && button.getAttribute("href") !== "#") {
-                return;
-            }
-
-            e.preventDefault(); // Блокуємо тільки для кнопок або посилань з href="#"
+            e.preventDefault(); 
             const modalClass = button.classList[0].replace("button-", "modal__");
             const modal = document.querySelector(`.${modalClass}`);
             if (modal) {

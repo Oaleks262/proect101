@@ -668,7 +668,9 @@
             .then(res => res.json())
             .then(data => {
                 document.getElementById("content-text").textContent = data.text;
-                document.querySelectorAll(".content-link").href = data.link;
+                document.querySelectorAll(".content-link").forEach(link => {
+                link.href = data.link;
+            });
                 document.getElementById("content-priceSolo").textContent = data.priceSolo;
                 document.getElementById("content-priceTeam").textContent = data.priceTeam;
                 document.getElementById("content-priceConferens").textContent = data.priceConferens;
