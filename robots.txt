@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://www.nataliiabakai.com.ua/sitemap.xml
