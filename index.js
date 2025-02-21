@@ -58,13 +58,13 @@ app.get("/api/content", (req, res) => {
 
 // Оновлення тексту (тільки для адмінів)
 app.post("/api/content", authenticateAdmin, (req, res) => {
-  const { text, link } = req.body;
+  const { text, link, priceSolo, priceTeam, priceConferens } = req.body;
 
-  if (!text || !link) {
+  if (!text || !link || !priceSolo || !priceTeam || !priceConferens) {
     return res.status(400).json({ success: false, message: "Усі поля обов'язкові!" });
   }
 
-  const updatedData = { text, link };
+  const updatedData = { text, link, priceSolo, priceTeam, priceConferens };
 
   fs.writeFile(CONTENT_FILE, JSON.stringify(updatedData), "utf8", (err) => {
     if (err) {

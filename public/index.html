@@ -29,12 +29,15 @@
     <meta name="author" content="Наталія Бакай | Natalia Bakay" /> 
     <meta name="keywords" content="психолог онлайн, самооцінка, самотність, панічні атаки, апатія, психологічна допомога, нав'язливі думки, провина, сором, психотерапевт, індивідуальна терапія, групова терапія, травмотерапія, EMDR, КПТ, депресія, тривога, психологічна травма, емоційні розлади, психічне здоров'я, стосунки, соціальна тривожність, самовизначення, особистісний розвиток, самооцінка, емоційна підтримка, психологічне консультування, стрес, самореалізація, психотерапія онлайн, психологічні проблеми, психотерапевт в Україні, консультація психолога, психолог Львів, психолог Україна, online psychologist, self-worth, loneliness, panic attacks, apathy, psychological help, intrusive thoughts, guilt, shame, psychotherapist, individual therapy, group therapy, trauma therapy, EMDR, CBT, depression, anxiety, psychological trauma, emotional disorders, mental health, relationships, social anxiety, self-determination, personal development, self-esteem, emotional support, psychological counseling, stress, self-realization, online psychotherapy, psychological issues, psychotherapist in Ukraine, psychologist consultation, psychologist Lviv, psychologist Ukraine" />
     
+    <link rel="preload" as="image" href="../img/pictures/hero/111.webp" type="image/webp">
+    <link rel="preload" as="image" href="../img/pictures/acquaintance/222.webp" type="image/webp">
+    <link rel="preload" as="image" href="../img/pictures/help/333.webp" type="image/webp">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/main.css" media="print" onload="this.onload=null;this.removeAttribute('media');">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>
 		Наталія Бакай - Психолог - Психотерапевт
@@ -44,7 +47,7 @@
     <header class="header">
         <div class="conteiner">
             <div class="header__content">
-                <a href="/"><img class="header__logo" src="../img/icon/logo/NBLogoColorHorizontal.svg" alt="Logo header"/></a>
+                <a href="/"><img class="header__logo" src="../img/icon/logo/NBLogoColorHorizontal.svg" alt="Logo header" loading="lazy"/></a>
                 <nav class="header__nav">
                     <ul>
                         <li><a class="header__link" href="#solution">Рішення</a></li>
@@ -63,7 +66,7 @@
     </header>
     <div class="mobileMenu">
             <div class="mobileMenu__content">
-                <a href="/"><img class="header__logo" src="../img/icon/logo/NBLogoColorHorizontal.svg" alt="Logo header"/></a>
+                <a href="/"><img class="header__logo" src="../img/icon/logo/NBLogoColorHorizontal.svg" alt="Logo header" loading="lazy"/></a>
                 <svg class="mobileMenu__close">
                     <use href="./img/icon/main/icon.svg#icon-cross"/>
                 </svg>
@@ -96,7 +99,17 @@
                         </p>
                     </div>
                     <!-- <img class="hero__img" src="../img/pictures/hero/hero-img.webp" alt="Hero pictures"/> -->
-                    <img class="hero__img" src="../img/pictures/hero/111.webp" alt="Hero pictures"/>
+                    <img class="hero__img" 
+                        src="../img/pictures/hero/111.webp" 
+                        srcset="../img/pictures/hero/111-480.webp 480w,
+                                ../img/pictures/hero/111-800.webp 800w,
+                                ../img/pictures/hero/111-1200.webp 1200w"
+                        sizes="(max-width: 600px) 480px, 
+                                (max-width: 1200px) 800px, 
+                                1200px"
+                        loading="lazy" 
+                        decoding="async"
+                        alt="Hero pictures">
                 </div>
             </div>
         </section>
@@ -135,7 +148,16 @@
             <div class="conteiner">
                 <div class="acquaintance__content">
                     <!-- <img class="acquaintance__img" src="../img/pictures/acquaintance/acquaintance-img.webp" alt="acquaintance-img" /> -->
-                    <img class="acquaintance__img" src="../img/pictures/acquaintance/222.webp" alt="acquaintance-img" />
+                    <img class="acquaintance__img" src="../img/pictures/acquaintance/222.webp" 
+                    srcset="../img/pictures/acquaintance/222-480.webp 480w,
+                                ../img/pictures/acquaintance/222-800.webp 800w,
+                                ../img/pictures/acquaintance/222-1200.webp 1200w"
+                    sizes="(max-width: 600px) 480px, 
+                                (max-width: 1200px) 800px, 
+                                1200px"
+                    loading="lazy" 
+                    decoding="async"
+                    alt="acquaintance-img" />
                     <div class="acquaintance__text">
                         <h3>Чому саме я?</h3>
                         <p>Я створюю безпечний простір, де ви зможете відкрито говорити про свої переживання, досліджувати їх та рухатися до змін. Моя мета – не лише допомогти вам вирішити актуальні труднощі, але й навчити вас інструментів, які стануть у нагоді протягом усього життя.</p>    
@@ -382,7 +404,16 @@
                         </h2>
                         <div class="help__item">
                             <!-- <img src="./img/pictures/help/help-img.webp" alt="help-img"> -->
-                            <img src="./img/pictures/help/333.webp" alt="help-img">
+                            <img src="./img/pictures/help/333.webp" 
+                            srcset="../img/pictures/help/333-480.webp 480w,
+                            ../img/pictures/help/333-800.webp 800w,
+                            ../img/pictures/help/333-1200.webp 1200w"
+                            sizes="(max-width: 600px) 480px, 
+                            (max-width: 1200px) 800px, 
+                            1200px"
+                            loading="lazy" 
+                            decoding="async" alt="help-img">
+                            
                             <ul class="help__ul">
                                 <li class="help__li">
                                     <svg class="help__img">
@@ -418,21 +449,21 @@
                             <svg class="price__img">
                                 <use href="./img/icon/main/icons.svg#icon-user"/>
                             </svg>
-                            <p>Індивідуальна консультація онлайн <br><span><strong>(1 год - 2000 грн)</strong></span></p>
+                            <p>Індивідуальна консультація онлайн <br><span><strong id="content-priceSolo"></strong></span></p>
                             <a class="button-red price__button" id="content-link" href="">Записатись на консультацію</a>
                         </li>
                         <li class="price__li">
                             <svg class="price__img">
                                 <use href="../img/icon/main/icons.svg#icon-users"/>
                             </svg>
-                            <p>Групова терапія від 3 до 7 людей <br><span><strong>(1,5 год - 700 грн/людина )</strong></span></p>
+                            <p>Групова терапія від 3 до 7 людей <br><span><strong id="content-priceTeam"></strong></span></p>
                             <a class="button-red price__button" id="content-link" href="">Записатись на консультацію</a>
                         </li>
                         <li class="price__li">
                             <svg class="price__img">
                                 <use href="../img/icon/main/icons.svg#icon-people"/>
                             </svg>
-                            <p>Провести івент на психологічну тему <br><span><strong>(2 год - 4000 грн )</strong></span></p>
+                            <p>Провести івент на психологічну тему <br><span><strong id="content-priceConferens"></strong></span></p>
                             <a class="button-red price__button" id="content-link" href="">Записатись на консультацію</a>
                         </li>
                     </ul>
@@ -505,61 +536,61 @@
                     <div class="swiper-container">
                         <ul class="diplomas__list swiper-wrapper">
                             <li class="diplomas__item swiper-slide">
-                                <img src="./img/dip/dip.jpg" alt="procedur-1">
+                                <img src="./img/dip/dip.webp" alt="procedur-1" loading="lazy" decoding="async" >
                             </li>
                             <li class="diplomas__item swiper-slide">
                                 
-                                    <img src="./img/dip/dip2.jpg" alt="procedur-2">
-                                
-                            </li>
-                            <li class="diplomas__item swiper-slide">
-                                
-                                    <img src="./img/dip/dip3.jpg" alt="procedur-3">
+                                    <img src="./img/dip/dip2.webp" alt="procedur-2" loading="lazy" decoding="async">
                                 
                             </li>
                             <li class="diplomas__item swiper-slide">
                                 
-                                    <img src="./img/dip/dip4.jpg" alt="procedur-4">
+                                    <img src="./img/dip/dip3.webp" alt="procedur-3" loading="lazy" decoding="async">
                                 
                             </li>
                             <li class="diplomas__item swiper-slide">
                                 
-                                    <img src="./img/dip/dip5.jpg" alt="procedur-5">
+                                    <img src="./img/dip/dip4.webp" alt="procedur-4" loading="lazy" decoding="async">
                                 
                             </li>
                             <li class="diplomas__item swiper-slide">
                                 
-                                    <img src="./img/dip/dip6.jpg" alt="procedur-6">
+                                    <img src="./img/dip/dip5.webp" alt="procedur-5" loading="lazy" decoding="async">
+                                
+                            </li>
+                            <li class="diplomas__item swiper-slide">
+                                
+                                    <img src="./img/dip/dip6.webp" alt="procedur-6" loading="lazy" decoding="async">
                                
                             </li>
                             <li class="diplomas__item swiper-slide">
                                
-                                    <img src="./img/dip/dip7.jpg" alt="procedur-7">
+                                    <img src="./img/dip/dip7.webp" alt="procedur-7" loading="lazy" decoding="async">
                                 
                             </li>
                             <li class="diplomas__item swiper-slide">
                                
-                                    <img src="./img/dip/dip8.jpg" alt="procedur-8">
+                                    <img src="./img/dip/dip8.webp" alt="procedur-8" loading="lazy" decoding="async">
                                 
                             </li>
                             <li class="diplomas__item swiper-slide">
                                 
-                                    <img src="./img/dip/dip9.jpg" alt="procedur-9">
+                                    <img src="./img/dip/dip9.webp" alt="procedur-9" loading="lazy" decoding="async">
                                 
                             </li>
                             <li class="diplomas__item swiper-slide">
                                 
-                                    <img src="./img/dip/dip10.jpg" alt="procedur-10">
+                                    <img src="./img/dip/dip10.webp" alt="procedur-10" loading="lazy" decoding="async">
                                
                             </li>
                             <li class="diplomas__item swiper-slide">
                                 
-                                    <img src="./img/dip/dip11.jpg" alt="procedur-11">
+                                    <img src="./img/dip/dip11.webp" alt="procedur-11" loading="lazy" decoding="async">
                                 
                             </li>
                             <li class="diplomas__item swiper-slide">
                                
-                                    <img src="./img/dip/dip12.jpg" alt="procedur-12">
+                                    <img src="./img/dip/dip12.webp" alt="procedur-12" loading="lazy" decoding="async">
                                
                             </li>
                         </ul>
@@ -628,17 +659,20 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/swiper.js"></script>
-    <script src="./js/form.js"></script>
-    <script src="./js/scroll.js"></script>
-    <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/swiper.js" defer></script>
+    <script src="./js/form.js" defer></script>
+    <script src="./js/scroll.js" defer></script>
+    <script src="./js/modal.js" defer></script>
+    <script src="./js/menu.js" defer></script>
     <script>
         fetch("/api/content")
             .then(res => res.json())
             .then(data => {
                 document.getElementById("content-text").textContent = data.text;
                 document.getElementById("content-link").href = data.link;
+                document.getElementById("content-priceSolo").textContent = data.priceSolo;
+                document.getElementById("content-priceTeam").textContent = data.priceTeam;
+                document.getElementById("content-priceConferens").textContent = data.priceConferens;
             })
             .catch(error => console.error("Помилка отримання контенту:", error));
     </script>

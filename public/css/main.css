@@ -84,6 +84,7 @@ section {
   font-family: "Kurale", serif;
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 /* Хедер */
@@ -2044,6 +2045,12 @@ section {
   padding: 8px 16px;
   height: 160px;
   border-radius: 20px;
+  background-color: rgba(201, 195, 181, 0.337254902);
+}
+.admin__content > form > input {
+  display: flex;
+  padding: 8px 16px;
+  border-radius: 50px;
   background-color: rgba(201, 195, 181, 0.337254902);
 }
 .admin__content > form > button {

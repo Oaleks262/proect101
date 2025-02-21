@@ -27,7 +27,13 @@
                     <option value="https://calendly.com/natalibakay/meet-with-me-1/">Calendly</option>
                     <option value="/pages/booking.html">Сторінка обмеження</option>
                 </select><br>
-        
+                <label for="priceSolo">Індивідуальна консультація:</label>
+                <input type="text" id="priceSolo" placeholder="Введіть вартість">
+                <label for="priceTeam">Групова терапія:</label>
+                <input type="text" id="priceTeam" placeholder="Введіть вартість">
+                <label for="priceConferens">Провести івент:</label>
+                <input type="text" id="priceConferens" placeholder="Введіть вартість">
+                
                 <button type="submit" class="button-red">Зберегти</button>
                 <button type="button" class="button-red" onclick="logout()">Вийти</button>
             </form>
@@ -46,6 +52,9 @@
             .then(data => {
                 document.getElementById("text").value = data.text;
                 document.getElementById("link").value = data.link;
+                document.getElementById("priceSolo").value = data.priceSolo;
+                document.getElementById("priceTeam").value = data.priceTeam;
+                document.getElementById("priceConferens").value = data.priceConferens;
             })
             .catch(error => console.error("Помилка отримання контенту:", error));
 
@@ -56,6 +65,10 @@
             const updatedContent = {
                 text: document.getElementById("text").value,
                 link: document.getElementById("link").value,
+                priceSolo: document.getElementById("priceSolo").value,
+                priceTeam: document.getElementById("priceTeam").value,
+                priceConferens: document.getElementById("priceConferens").value,
+
             };
 
             fetch("/api/content", {
