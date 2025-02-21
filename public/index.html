@@ -38,7 +38,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/main.css" media="print" onload="this.onload=null;this.removeAttribute('media');">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <title>
 		Наталія Бакай - Психолог - Психотерапевт
 	</title>
@@ -107,7 +108,6 @@
                         sizes="(max-width: 600px) 480px, 
                                 (max-width: 1200px) 800px, 
                                 1200px"
-                        loading="lazy" 
                         decoding="async"
                         alt="Hero pictures">
                 </div>
@@ -155,7 +155,6 @@
                     sizes="(max-width: 600px) 480px, 
                                 (max-width: 1200px) 800px, 
                                 1200px"
-                    loading="lazy" 
                     decoding="async"
                     alt="acquaintance-img" />
                     <div class="acquaintance__text">
@@ -411,7 +410,6 @@
                             sizes="(max-width: 600px) 480px, 
                             (max-width: 1200px) 800px, 
                             1200px"
-                            loading="lazy" 
                             decoding="async" alt="help-img">
                             
                             <ul class="help__ul">
@@ -658,7 +656,7 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script async  src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/swiper.js" defer></script>
     <script src="./js/form.js" defer></script>
     <script src="./js/scroll.js" defer></script>
