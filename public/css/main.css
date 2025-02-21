@@ -1,5 +1,12 @@
 @charset "UTF-8";
 /* Базові стилі */
+.kurale-regular {
+  font-family: "Kurale", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-display: optional;
+}
+
 :root {
   --color-american-red: #b51733;
   --color-red-hover: #b84d60;
@@ -80,13 +87,6 @@ section {
     padding: 42px 0;
   }
 }
-.kurale-regular {
-  font-family: "Kurale", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-display: optional;
-}
-
 /* Хедер */
 .header {
   width: 100%;
