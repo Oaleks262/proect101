@@ -1,6 +1,8 @@
 .swiper-container{
     width: 100%;
-    overflow: hidden;
+    overflow: hidden;   
+    touch-action: pan-y;
+    -webkit-overflow-scrolling: touch;
 }
 .swiper-wrapper{
     align-items: center;

@@ -1,32 +1,27 @@
 const swiper = new Swiper('.swiper-container', {
+  loop: true,
 
 
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 16,
-    // Responsive breakpoints
-    breakpoints: {
-      // when window width is >= 480px
+  slidesPerView: 1,
+  spaceBetween: 16,
+
+  // Responsive breakpoints
+  breakpoints: {
       768: {
-        slidesPerView: 1,
-
+          slidesPerView: 1,
       },
-      // when window width is >= 640px
       1280: {
-        slidesPerView: 1,
-
+          slidesPerView: 1,
       }
-    },
+  },
 
-    pagination: {
+  pagination: {
       el: '.pagination',
-    },
-  
+      clickable: true, // Щоб можна було клікати по точках
+  },
 
-    navigation: {
+  navigation: {
       nextEl: '.button-next',
       prevEl: '.button-prev',
-    },
-  
-
-  });
+  },
+});

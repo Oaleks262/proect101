@@ -1727,6 +1727,8 @@ section {
 .swiper-container {
   width: 100%;
   overflow: hidden;
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
 }
 
 .swiper-wrapper {
