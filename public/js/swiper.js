@@ -17,7 +17,7 @@ const swiper = new Swiper('.swiper-container', {
 
   pagination: {
       el: '.pagination',
-      clickable: true, // Щоб можна було клікати по точках
+      clickable: true, 
   },
 
   navigation: {
