@@ -1,16 +1,19 @@
-# # Node.js
-# node_modules/
-# npm-debug.log
-# package-lock.json
+# Node.js
+node_modules/
+npm-debug.log
+package-lock.json
 
-# # Environment Variables
-# .env
+# Environment Variables
+.env
 
-# # Logs
-# logs/
-# *.log
+# Logs
+logs/
+*.log
 
-# # Editor/IDE
-# .vscode/
-# .idea/
-# .DS_Store
+# Editor/IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Data
+content.js
