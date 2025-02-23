@@ -16,4 +16,4 @@ logs/
 .DS_Store
 
 # Data
-content.js
+content.json
